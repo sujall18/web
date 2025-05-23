@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🛒 My Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #151516;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: rgb(149, 238, 238);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    li {
+      background-color: #222;
+      padding: 15px 25px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    li span {
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: none;
+      background-color: rgb(240, 232, 232);
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    button:hover {
+      background-color: #151516;
+      color: cyan;
+      border: 1px solid white;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-top: 30px;
+      color: #8ee3e3;
+    }
+
+    #empty {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-top: 100px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>🛒 My Cart</h2>
+  <div id="cart-container"></div>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const container = document.getElementById("cart-container");
+
+    if (cart.length === 0) {
+      container.innerHTML = "<p id='empty'>Your cart is empty 😕</p>";
+    } else {
+      let html = "<ul>";
+      let total = 0;
+      cart.forEach((item, index) => {
+        html += `<li>
+                    <span>${item.product} - ₹${item.price}</span>
+                    <button onclick="removeItem(${index})">Remove</button>
+                 </li>`;
+        total += item.price;
+      });
+      html += `</ul><h3>Total: ₹${total}</h3>`;
+      container.innerHTML = html;
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload();
+    }
+  </script>
+</body>
+</html>

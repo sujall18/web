@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+#bgimg1 {
+    background-image: url();
+}
+
+#bgimg2 {
+    background-image: url(https://thumbs.dreamstime.com/b/interior-modern-building-blurred-shopping-mall-background-commercial-business-center-look-bright-atrium-glass-metal-88837549.jpg);
+
+}
+
+#header {
+    background-image: url(https//cdn.dribbble.com/users/1162077/screenshots/4840870/e-commerce-pattern.gif);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 75px;
+    box-shadow: 15px 15px 15px rgba(226, 127, 127, 0.06);
+    box-shadow: 10px;
+    border: #000;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: sticky;
+}
+
+#logo img {
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 25px;
+    font-size: 15px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(240, 232, 232);
+}
+
+footer a,
+footer h4,
+#navbar li a {
+    color: #131213;
+    --b: 0.1em;
+    --c: #4d1313;
+    color: #151516;
+    padding-block: var(--b);
+    background:
+        linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+footer a,
+footer h4,
+#navbar li a:hover {
+    --_p: 100%;
+    --_s: .3s;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 54px;
+    color: rgb(149, 238, 238);
+}
+
+h4 {
+    font-size: 25px;
+    color: rgb(222, 92, 92);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 75px;
+}
+
+h1 {
+    font-size: 170px;
+    font-weight: 600;
+    color: rgb(235, 243, 243);
+}
+
+#hero {
+    background-image: url(https//cdn.dribbble.com/users/1162077/screenshots/4840870/e-commerce-pattern.gif);
+    height: 90vh;
+    width: 100%;
+    background-color: #131213;
+    background-position: top 25% right 0;
+    background-size: cover;
+    display: flex;
+    padding: 0 80px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    margin-right: 700;
+}
+
+#hero a{
+    margin-left: 100vh;
+}
+
+button {
+    padding: 0 30p;
+    border-radius: 15px;
+    padding: 10px 10px;
+    border: 2px solid rgb(250, 246, 246);
+    border-radius: 9px;
+    box-shadow: 10px 10px 40px rgb(23, 23, 24);
+}
+
+button:hover {
+    background-color: rgb(16, 16, 17);
+    color: blue;
+    cursor: pointer;
+    border: 2px solid rgb(244, 243, 243);
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px rgb(23, 23, 24);
+}
+
+.sectionp1 {
+    padding: 40px 80px;
+}
+
+#feature .fe-box:hover {
+    background-image: linear-gradient(#363646);
+    color: #d9d9eb;
+    cursor: pointer;
+}
+
+#feature img {
+    height: 120px;
+    width: 190px;
+}
+
+#product1 h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+    color: #2a2a40;
+}
+
+#pro {
+    width: 20px;
+    min-width: 310px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+#pro:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#haha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#news h2 {
+    background-image: url(https://i.pinimg.com/originals/fc/65/27/fc65273a2e94d1f4d0abf34b4db0cc84.jpg);
+    text-align: center;
+    padding: 40px;
+    margin-bottom:50px;
+    margin-left: 70px;
+    margin-right: 60px;
+    color: #f4f4f9;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    font: 5.5em sans-serif;
+} 
+
+#news h2:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#banner #banner-box1 {
+    background-image: url(https://i.pinimg.com/originals/17/56/50/1756504b8229cb1689cb508bcf5c289b.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 580px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+#banner #banner-box2 {
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.5HsClQJYeQskCNFi9TSlCwHaD5&pid=Api&P=0&h=180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 580px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+#banner #banner-boxx3 {
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.Id52Ek21rs4ZrXyS0rJOMQHaEX&pid=Api&P=0&h=180);
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 450px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+#banner #banner-boxx4 {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-taobao-e-commerce-poster-clothing-banner-background-image_142667.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    cursor: pointer;
+    width: 450px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+#banner #banner-boxx5 {
+    background-image: url(https://www.kindpng.com/picc/m/324-3240934_transparent-aesthetic-clothing-png-png-download.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 350px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner-box1:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#banner-box2:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#banner-boxx3:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#banner-boxx4:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#banner-boxx5:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #000;
+    background-color: #000;
+}
+
+footer #col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+#a {
+    display: flex;
+}
+
+footer h4 {
+    color: rgb(246, 241, 241);
+    font-size: 22px;
+    padding: 0px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #d9d9eb;
+}
+
+footer a {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(244, 240, 240);
+}
+
+footer a:hover {
+    --_p: 100%;
+    --_s: .3s;
+    color: blue;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+    box-shadow: none;
+}
+
+#copy {
+    display: flex;
+    justify-content: center;
+}
+
+
+details
+
+
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #eee;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .product-image {
+    flex: 1;
+    margin-right: 30px;
+    text-align: center;
+    width: 60vh;
+    height: 70vh;
+  }
+  
+  
+  .product-details {
+    flex: 2;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #151516;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .price-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .rating {
+    margin-left: 10px;
+    color: #61f70a;
+  }
+  
+  .sizes {
+    margin-bottom: 20px;
+  }
+  
+  .sizes h3 {
+    margin-bottom: 5px;
+  }
+  
+  .sizes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sizes li {
+    display:none
+  }
+
+  #h3{
+    text-align: center;
+    font-size: 5vh;
+  }
+
+  .add-to-cart{
+    width: 50%;
+    height: 40px;
+    background-color: #fbf8f8;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
